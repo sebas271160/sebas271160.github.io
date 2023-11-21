@@ -1,0 +1,75 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+    background-color: rgb(19 19 19);
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+header {
+     padding: 20px;
+     background-color: rgb(139 92 247);
+}
+
+header h1{
+     font-family: 'Playfair Display', serif;
+     font-weight: 400;
+     font-size: 52px;
+     padding-left: 20px;
+}
+
+header h1 a{
+     text-decoration: none;
+     color: white;
+}
+
+/******************************************
+/* NAV
+/*******************************************/
+
+.horizontalNav ul{
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: flex-end;
+     align-items: center;
+     list-style-type: none;
+     margin: none;
+}
+
+.horizontalNav li a{
+     padding: 8px 16px;
+     color: rgb(0 214 192);
+     display: inline-block;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+     font-size: 24px;
+     text-transform: uppercase;
+     text-decoration: none;
+}
+
+.horizontalNav li a:hover{
+     background-color: white;
+}
+
+.horizontalNav li a:active{
+     background-color: white;
+}
