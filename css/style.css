@@ -31,10 +31,11 @@ header {
 }
 
 header h1{
-     font-family: 'Playfair Display', serif;
+     font-family: 'Open Sans', sans-serif;
      font-weight: 400;
      font-size: 52px;
      padding-left: 20px;
+     text-transform: uppercase;
 }
 
 header h1 a{
@@ -64,6 +65,7 @@ header h1 a{
      font-size: 24px;
      text-transform: uppercase;
      text-decoration: none;
+     border-radius: 4px;
 }
 
 .horizontalNav li a:hover{
@@ -72,4 +74,60 @@ header h1 a{
 
 .horizontalNav li a:active{
      background-color: white;
+}
+
+/******************************************
+/* HOME
+/*******************************************/
+
+.container {
+     padding: 32px;
+     display: flex;
+     flex-flow: column nowrap;
+     width: 100%;
+}
+
+.aboutMe {
+     width: 70%;
+}
+
+.aboutMe h2{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+     font-size: 32px;
+     text-transform: uppercase;
+     color: rgb(139 92 247);
+     text-decoration: underline;
+}
+
+.aboutMe p{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+     font-size: 24px;
+     color: white;
+}
+
+.aboutMe strong{
+     text-decoration: underline;
+     font-weight: 400;
+}
+
+.aboutMe ul{
+     list-style-type: none;
+     padding-left: 0px;
+}
+
+.aboutMe li{
+     display: inline-block;
+     color: white;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+     font-size: 24px;
+     padding: 8px;
+}
+
+.skills li{
+     border-radius: 4px;
+     background-color: rgb(49 49 49);
+     margin-right: 4px;
 }
