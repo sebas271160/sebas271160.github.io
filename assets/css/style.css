@@ -106,11 +106,11 @@ body::-webkit-scrollbar{
 /*******************************************/
 
 .aboutMe {
-     width: 50%;
      display: flex;
      flex-flow: column wrap;
      justify-content: flex-start;
      align-items: flex-start;
+     width: 50%;
 }
 
 .aboutMe h2{
@@ -210,4 +210,41 @@ body::-webkit-scrollbar{
 .socials li:last-of-type a:hover{
      border: 2px solid rgb(255, 102, 0);
      color: rgb(255, 102, 0);
+}
+
+/******************************************
+/*  Media Rules
+/*******************************************/
+
+@media all and (max-width: 400px){
+     .container{
+          flex-flow: column nowrap;
+          width: 100%;
+          padding: 2% 10%;
+     }
+
+     .socials ul{
+          flex-flow: row wrap;
+          width: 100%;
+     }
+
+     .socials {
+          width: 100%;
+     }
+
+     .aboutMe{
+          width: 100%;
+     }
+
+     .aboutMe img{
+          width: 80%;
+          height: auto;
+          margin-top: 16px;
+          align-self: flex-start;
+     }
+
+     .socials a{
+          margin: 8px;
+          min-width: 50%;
+     }
 }
