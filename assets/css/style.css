@@ -96,9 +96,13 @@ body::-webkit-scrollbar{
      padding: 32px 10%;
      display: flex;
      flex-flow: column wrap;
-     justify-content: center;
+     justify-content: flex-start;
      align-items: flex-start;
-     height: 100vh;
+     min-height: 100vh;
+}
+
+.container + .container {
+     flex-flow: row nowrap;
 }
 
 /******************************************
@@ -147,7 +151,7 @@ body::-webkit-scrollbar{
 }
 
 .aboutMe img{
-     width: 50%;
+     width: 80%;
      height: auto;
      align-self: center;
      justify-self: center;
@@ -216,7 +220,7 @@ body::-webkit-scrollbar{
 /*  Media Rules
 /*******************************************/
 
-@media all and (max-width: 450px){
+@media all and (max-width: 600px){
      .container{
           flex-flow: column nowrap;
           width: 100%;
@@ -224,8 +228,14 @@ body::-webkit-scrollbar{
      }
 
      .socials ul{
-          flex-flow: row wrap;
+          display: flex;
+          flex-flow: row nowrap;
+          overflow: scroll;
           width: 100%;
+     }
+
+     .socials ul::-webkit-scrollbar {
+          display: none;
      }
 
      .socials {
@@ -240,11 +250,19 @@ body::-webkit-scrollbar{
           width: 80%;
           height: auto;
           margin-top: 16px;
-          align-self: flex-start;
+          align-self: center;
+          justify-self: center;
      }
 
      .socials a{
-          margin: 8px;
-          min-width: 50%;
+          padding: 32px;
+     }
+
+     .container + .container {
+          flex-flow: column nowrap;
+     }
+     
+     .socials li:last-of-type a{
+          order: 0;
      }
 }
