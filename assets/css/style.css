@@ -216,7 +216,7 @@ body::-webkit-scrollbar{
 /*  Media Rules
 /*******************************************/
 
-@media all and (max-width: 400px){
+@media all and (max-width: 450px){
      .container{
           flex-flow: column nowrap;
           width: 100%;
